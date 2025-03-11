@@ -9,7 +9,7 @@ table {
     background: linear-gradient(#edf4fe, #bed6f8);
 }
 
-td {
+td, th {
     border: 5px solid #bed6f8;
 }
 
