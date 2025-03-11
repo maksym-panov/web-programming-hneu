@@ -1,0 +1,11 @@
+/* ADDITIONAL STYLES FOR tables.html */
+.casc-main {
+    width: min(1500px, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main table caption {
+    margin-bottom: 1rem;
+}

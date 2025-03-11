@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 3. Link custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- 4. Link style.css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- 5. Link normalize.css -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link rel="stylesheet" href="../lab2/styles/index.css" />
+    <link rel="stylesheet" href="./styles/forms.css" />
+    <script src="./js/index.js" defer></script>
+    <title>Forms</title>
+</head>
+<body>
+    <header>
+        <!-- NAVIGATION HEADER -->
+        <p>
+            Maksym Panov
+        </p>
+        <div>
+            <a href="./index.html">Робота з текстом</a>
+            <a href="./images.html">Робота із зображеннями</a>
+            <a href="./tables.html">Робота з таблицями</a>
+            <a href="./forms.html">Робота з формами</a>
+            <div id="menu-button">☰</div>
+            <div id="custom-menu">
+                <a href="./index.html">Робота з текстом</a>
+                <a href="./images.html">Робота із зображеннями</a>
+                <a href="./tables.html">Робота з таблицями</a>
+                <a href="./forms.html">Робота з формами</a>
+            </div>
+        </div>
+    </header>
+    <main class="custom-main">
+        <h1>Робота з формами</h1>
+
+        <!-- FORM FROM LAB2 -->
+        <form class="form-block" method="POST" action="https://api.mpanov.com/api/test/v0/public/signup">
+            <label class="cust-label" for="login">
+                Логін
+                <input class="prompt" id="login" type="text" placeholder="maksym@mpanov.com" required />
+            </label>
+            <label class="cust-label" for="password">
+                Пароль
+                <input class="prompt" id="password" type="password" placeholder="********" required />
+            </label>
+            <label class="cust-label" for="birth-day">
+                День народження
+                <input class="prompt" id="birth-day" type="number" placeholder="31" />
+            </label>
+            <label class="cust-label" for="birth-month">
+                Місяць народження
+                <select class="prompt" id="birth-month">
+                    <option value="" selected></option>
+                    <option value="0">Січень</option>
+                    <option value="1">Лютий</option>
+                    <option value="2">Березень</option>
+                    <option value="3">Квітень</option>
+                    <option value="4">Травень</option>
+                    <option value="5">Червень</option>
+                    <option value="6">Липень</option>
+                    <option value="7">Серпень</option>
+                    <option value="8">Вересень</option>
+                    <option value="9">Жовтень</option>
+                    <option value="10">Листопад</option>
+                    <option value="11">Грудень</option>
+                </select>
+            </label>
+            <label class="cust-label" for="birth-year">
+                Рік народження
+                <select class="prompt" id="birth-year">
+                    <option value="" selected></option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                </select>
+            </label>
+           
+            <p style="margin-bottom: 0;">Стать</p>
+            <label for="sex-male">
+                <input id="male" type="radio" name="sex" checked />
+                Чоловік
+            </label>
+            <label for="sex-female">
+                <input id="female" type="radio" name="sex" />
+                Жінка
+            </label>
+           
+            <p style="margin-bottom: 0">Мови спілкування</p>
+            <label for="ua-check">
+                <input id="ua-check" type="checkbox" value="ua" name="language" />
+                Українська
+            </label>
+            <label for="en-check">
+                <input id="en-check" type="checkbox" value="en" name="language" />
+                Англійська
+            </label>
+            <label for="fr-check">
+                <input id="fr-check" type="checkbox" value="fr" name="language" />
+                Французька
+            </label>
+            <label for="de-check">
+                <input id="de-check" type="checkbox" value="de" name="language" />
+                Німецька
+            </label>
+    
+            <label class="cust-label" for="comment">
+                Коментар
+                <textarea class="prompt cust-area" id="comment" name="comment" rows="4" cols="50"></textarea>
+            </label>
+    
+            <input class="btn-primary" type="submit" />
+        </form>
+    </main>
+    <footer>
+        <div>
+            <a href="./index.html">Робота з текстом</a>
+            <a href="./images.html">Робота із зображеннями</a>
+            <a href="./tables.html">Робота з таблицями</a>
+            <a href="./forms.html">Робота з формами</a>
+        </div>
+    </footer>
+</body>
+</html>

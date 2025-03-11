@@ -1,0 +1,18 @@
+/* ADDITIONAL STYLES FOR forms.html */
+.custom-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+[type="submit"] {
+    background-color: black;
+}
+
+[type="submit"]:hover {
+    cursor: pointer;
+}
+
+[type="checkbox"]:checked, [type="radio"]:checked {
+    accent-color: black;
+}
