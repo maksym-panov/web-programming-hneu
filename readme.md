@@ -15,3 +15,7 @@
 ## Lab 4
 1. Subdirectory - `./lab4`
 2. Name - "Using CSS for web-pages appearance description"
+
+## Lab 5
+1. Subdirectory - `./lab5`
+2. Name - "Working with JavaScript arrays. Arithmetic and assignment. User interaction"
