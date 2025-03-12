@@ -19,3 +19,7 @@
 ## Lab 5
 1. Subdirectory - `./lab5`
 2. Name - "Working with JavaScript arrays. Arithmetic and assignment. User interaction"
+
+## Lab 6
+1. Subdirectory - `./lab6`
+2. Name - "Working with DOM functions in JavaScript. User Interaction"

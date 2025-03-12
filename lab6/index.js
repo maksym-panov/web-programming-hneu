@@ -11,6 +11,12 @@ const showText = (btn) => {
     }
 };
 
+/*
+    5. Змінити стиль обраних власноруч елементів по натисканні кнопки
+    «Змінити стиль», використавши звернення до елементів зa id, класом,
+    тегом та до всіх елементів, що відповідають селектору.
+*/
+// Перемикає темну/світлу теми
 const changeStyle = () => {
     const body = document.getElementsByTagName('body')[0];
     const footer = document.getElementsByTagName('footer')[0];
@@ -61,6 +67,12 @@ const changeStyle = () => {
 
 };
 
+/*
+    6. Додайте функції з подіями на сторінці для обрани на власний розсуд
+    елементів click, mouseover / mouseout, onchange (для форми вводу) У
+    цю частину коду додати коментарі.
+*/
+// Підсвічує картки синім кольором, коли курсор знаходиться над ними
 document.addEventListener('mouseover', (event) => {
     document.querySelectorAll('.collection_item').forEach((i) => {
         i.style.boxShadow = '0 0 0 #9ecaed';
