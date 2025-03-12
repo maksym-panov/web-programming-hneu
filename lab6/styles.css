@@ -1,0 +1,206 @@
+@import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
+
+html {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+header {
+    background-color: rgb(165, 204, 79);
+    color: rgb(192, 251, 92);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    box-sizing: border-box;
+}
+
+header h1, header h2 {
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(40, 38, 39);
+    color: rgb(129, 129, 129);
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav form {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav form input {
+    height: 30px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+nav form input[type="submit"] {
+    width: 81px;
+}
+
+nav form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+nav .nav-buttons-block div {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-buttons-block div a {
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-buttons-block div a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.nav-buttons-block {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px
+}
+
+.main-content {
+    width: min(100%, 960px);
+    box-sizing: border-box;
+}
+
+.main-content > h1, .main-content > h2 {
+    display: inline;
+}
+
+.main-content > h2 {
+    color: rgb(128, 128, 128);
+}
+
+hr {
+    margin: 0;
+    margin-bottom: 16px
+}
+
+.collections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.collection_item {
+    width: 310px;
+    border: 1px solid black;
+    height: fit-content;
+    background-color: white;
+}
+
+.collections_text {
+    padding: 16px;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+/*
+    2. У файлі .css налаштувати параметри області з текстом таким чином, що
+    ткст не вміщувався у зазначену область (або збільшити об’єм тексту):
+*/
+.collections_text p {
+    font-size: 14px;
+    height: 80px;
+    overflow: hidden;
+}
+
+/*
+    3. Завдати параметри кнопки (зовнішній вигляд кнопки можна обрати на
+    власний розсуд):
+*/
+.collections_text button {
+    padding: 10px;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 5px;
+}
+
+.collections_text button:hover {
+    cursor: pointer;
+}
+
+video {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    height: 96px;
+    width: 100%;
+    background-color: rgb(165, 204, 79);
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    text-align: left;
+    width: 960px;
+    color: rgb(236, 254, 169);
+}
+
+.under-footer {
+    display: flex;
+    justify-content: right;
+    margin-top: 100px;
+}
+
+.under-footer img:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 960px) {
+    .collections {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .main-content h1, .main-content h2 {
+        text-align: center;
+        display: block;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        height: 200px;
+        padding-bottom: 2rem;
+    }
+
+    nav .nav-buttons-block, nav .nav-buttons-block form {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .nav-buttons-block div {
+        margin-bottom: 2rem;
+    }
+}
